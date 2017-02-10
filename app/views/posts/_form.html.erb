@@ -1,0 +1,10 @@
+<%=render "layouts/errors", :object => @post %>
+
+<div class="well">
+  <%= form_for @post do |f| %>
+    <%= f.text_field :title, placeholder: "Post Title"%>
+    <%= f.text_field :author, placeholder: "Author Name" %>
+    <%= f.text_field :content, placeholder: "Enter Content"%>
+    <%= f.submit class: "btn linkcolor" %>
+  <% end %>
+</div>

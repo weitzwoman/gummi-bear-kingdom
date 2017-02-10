@@ -1,0 +1,8 @@
+<h1>All Blog Posts</h1>
+  <ul>
+    <% @posts.each do |post| %>
+      <li><h4><%= post.title%> by <%= post.author %><br><%= post.content %></li>
+    <% end %>
+  </ul>
+
+<%= link_to "Add New Blog Post", new_post_path, class: "btn linkcolor" %>
