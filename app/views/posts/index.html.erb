@@ -1,7 +1,7 @@
 <h1>All Blog Posts</h1>
-  <ul>
+  <ul >
     <% @posts.each do |post| %>
-      <li><h4><%= post.title%> by <%= post.author %><br><%= post.content %></li>
+      <li class="well"><h4><%= post.title%> by <%= post.author %><br><h5><%= post.content %><h5></li>
     <% end %>
   </ul>
 
