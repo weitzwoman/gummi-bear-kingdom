@@ -1,0 +1,8 @@
+<h1>All Inventory</h1>
+  <ul>
+    <% @products.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+
+<%= link_to "Add New Product", new_product_path, class: "btn" %>
