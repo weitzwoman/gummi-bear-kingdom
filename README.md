@@ -29,6 +29,8 @@ rails s
 localhost:3000
 ```
 
+* _Or, view application on [Heroku](https://gummi-bear-inventory.herokuapp.com/)_
+
 ## Support and contact details
 
 _Contact me on Github at [weitzwoman](https://github.com/weitzwoman)_
