@@ -1,7 +1,13 @@
 <h1>All Blog Posts</h1>
   <ul >
     <% @posts.each do |post| %>
-      <li class="well"><h4><%= post.title%> by <%= post.author %><br><h5><%= post.content %><h5></li>
+      <li class="well">
+        <h4><%= post.title%> by <%= post.author %></h4>
+        <br>
+        <h5><%= post.content %></h5>
+        <%= link_to "Edit Post", edit_post_path(@post), class: "btn linkcolor" %>
+        <%= link_to "Delete Post", post_path(@post), :data => {:confirm => "are you sure?", :method => "delete"}, class: "btn linkcolor" %>
+      </li>
     <% end %>
   </ul>
 
