@@ -1,8 +1,7 @@
 <h1>All Inventory</h1>
+<%= link_to "Add New Product", new_product_path, class: "btn linkcolor" %>
   <ul>
     <% @products.each do |product| %>
       <li><h4><%= link_to product.name, product_path(product) %></h4></li>
     <% end %>
   </ul>
-
-<%= link_to "Add New Product", new_product_path, class: "btn linkcolor" %>
