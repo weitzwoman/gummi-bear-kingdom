@@ -1,4 +1,13 @@
 @import "materialize/components/color";
 $primary-color: color("blue", "lighten-2") !default;
-$secondary-color: color("yellow", "base") !default;
+$secondary-color: color("pink", "lighten-1") !default;
 @import "materialize";
+
+.product-image {
+  width: 300px;
+  margin-top: 20px;
+  float: right;
+  img {
+    width: 100%;
+  }
+}
