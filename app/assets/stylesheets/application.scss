@@ -42,10 +42,9 @@ a:hover {
   color: #e65100;
 }
 
-.btn {
-  a:hover {
-    color: white;
-  }
+.linkcolor {
+  text-decoration: none;
+  color: white !important;
 }
 
 .homepage {

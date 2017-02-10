@@ -8,5 +8,5 @@
 <h4>Country of Origin: <%= @product.country_origin %></h4>
 <h4>Ingredients: <%= @product.ingredients %></h4>
 <br>
-<%= link_to "Edit Product", edit_product_path(@product), class: "btn" %>
-<%= link_to "Delete Product", product_path(@product), :data => {:confirm => "are you sure?", :method => "delete"}, class: "btn" %>
+<%= link_to "Edit Product", edit_product_path(@product), class: "btn linkcolor" %>
+<%= link_to "Delete Product", product_path(@product), :data => {:confirm => "are you sure?", :method => "delete"}, class: "btn linkcolor" %>
