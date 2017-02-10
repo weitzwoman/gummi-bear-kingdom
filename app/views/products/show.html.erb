@@ -1,7 +1,11 @@
 <h3>Product Information for <%= @product.name %></h3>
 
-<h4>$ <%= @product.cost %></h4>
-<h4><%= @product.country_origin %></h4>
+<h4>Unit Cost: <%= number_to_currency(@product.cost) %></h4>
+<h4>Country of Origin: <%= @product.country_origin %></h4>
+<h4>Ingredients: <%= @product.ingredients %></h4>
+<div class="product-image">
+  <img src="<%= @product.image %>" alt="" />
+</div>
 
 <%= link_to "Edit Product", edit_product_path(@product), class: "btn" %>
 <%= link_to "Delete Product", product_path(@product), :data => {:confirm => "are you sure?", :method => "delete"}, class: "btn" %>

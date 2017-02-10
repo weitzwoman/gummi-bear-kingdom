@@ -4,7 +4,7 @@
   <%= f.label :name %>
   <%= f.text_field :name, class: "form-control" %>
   <%= f.label :cost %>
-  <%= f.number_field :cost, class: "form-control" %>
+  <%= f.number_field :cost, class: "form-control", :step => 0.01 %>
   <%= f.label :country_origin %>
   <%= f.text_field :country_origin, class: "form-control" %>
   <%= f.label :ingredients %>
