@@ -1,5 +1,5 @@
 @import "materialize/components/color";
-$primary-color: color("blue", "lighten-2") !default;
+$primary-color: color("orange", "lighten-2") !default;
 $secondary-color: color("pink", "lighten-1") !default;
 @import "materialize";
 
@@ -14,8 +14,40 @@ $secondary-color: color("pink", "lighten-1") !default;
 
 .brand-logo {
   margin-left: 20px;
+  font-family: 'Comfortaa', cursive;
 }
 
 .nav-li {
   margin-right: 20px;
+  font-family: 'Comfortaa', cursive;
+}
+
+body {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/ca/dc/6b/cadc6b72e89313359767f16c4cfffe75.jpg");
+}
+
+h1, h2 {
+  font-family: 'Comfortaa', cursive;
+}
+
+h3, h4, li, p, a {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  color: #880e4f;
+}
+
+a:hover {
+  color: #e65100;
+}
+
+.btn {
+  a:hover {
+    color: white;
+  }
+}
+
+.homepage {
+  margin-top: 200px;
 }
