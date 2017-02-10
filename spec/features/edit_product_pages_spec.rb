@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "the edit product process" do
   it "edits a product" do
-    product = Product.create(:name => 'Gummi Yummi', :cost => 2, :country_origin => "Canada")
+    product = Product.create(:name => 'Gummi Yummi', :cost => 2, :country_origin => "Canada", :ingredients => "so much sugar", :image => "image address")
     visit product_path(product)
     click_on 'Edit Product'
     fill_in 'Name', :with => 'Yummier Gummi'
@@ -11,7 +11,7 @@ describe "the edit product process" do
   end
 
   it "gives error when a field is left blank" do
-    product = Product.create(:name => 'Sweets', :cost => 2, :country_origin => "Canada")
+    product = Product.create(:name => 'Sweets', :cost => 2, :country_origin => "Canada", :ingredients => "so much sugar", :image => "image address")
     visit product_path(product)
     click_on 'Edit Product'
     fill_in 'Name', :with => ''

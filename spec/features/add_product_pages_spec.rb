@@ -7,6 +7,8 @@ describe "the add a product process" do
     fill_in 'Name', :with => 'Not Chocolate'
     fill_in 'Cost', :with => 2
     fill_in 'Country origin', :with => 'USA'
+    fill_in 'Ingredients', :with => 'Sugar'
+    fill_in 'Image', :with => 'web address'
     click_on 'Create Product'
     expect(page).to have_content 'All Inventory'
   end

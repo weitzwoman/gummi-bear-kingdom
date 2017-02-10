@@ -2,10 +2,14 @@
 
 <%= form_for @product do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, class: "form-control" %>
   <%= f.label :cost %>
-  <%= f.number_field :cost %>
+  <%= f.number_field :cost, class: "form-control" %>
   <%= f.label :country_origin %>
-  <%= f.text_field :country_origin %>
-  <%= f.submit %>
+  <%= f.text_field :country_origin, class: "form-control" %>
+  <%= f.label :ingredients %>
+  <%= f.text_field :ingredients, class: "form-control" %>
+  <%= f.label :image, "Image URL" %>
+  <%= f.text_field :image, class: "form-control" %>
+  <%= f.submit class: "btn" %>
 <% end %>
