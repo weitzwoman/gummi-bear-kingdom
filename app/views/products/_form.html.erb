@@ -1,15 +1,12 @@
 <%=render "layouts/errors", :object => @product %>
 
-<%= form_for @product do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name, class: "form-control" %>
-  <%= f.label :cost %>
-  <%= f.number_field :cost, class: "form-control", :step => 0.01 %>
-  <%= f.label :country_origin %>
-  <%= f.text_field :country_origin, class: "form-control" %>
-  <%= f.label :ingredients %>
-  <%= f.text_field :ingredients, class: "form-control" %>
-  <%= f.label :image, "Image URL" %>
-  <%= f.text_field :image, class: "form-control" %>
-  <%= f.submit class: "btn linkcolor" %>
-<% end %>
+<div class="well">
+  <%= form_for @product do |f| %>
+    <%= f.text_field :name, placeholder: "Product Name"%>
+    <%= f.number_field :cost, :step => 0.01, placeholder: "Unit Cost" %>
+    <%= f.text_field :country_origin, placeholder: "Country of Origin" %>
+    <%= f.text_field :ingredients, placeholder: "Ingredients"%>
+    <%= f.text_field :image, placeholder: "Image URL"%>
+    <%= f.submit class: "btn linkcolor" %>
+  <% end %>
+</div>
