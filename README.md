@@ -20,8 +20,8 @@ postgres
 
 * _In a separate Command Line, run:_
 ```
-rails db:migrate
-rails db:test:prepare
+rails db:create
+rails db:migrate db:test:prepare
 rails s
 ```
 * _Then, in any modern browser, open:_

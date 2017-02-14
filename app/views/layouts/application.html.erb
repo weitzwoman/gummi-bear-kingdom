@@ -20,6 +20,13 @@
       </div>
     </nav>
     <div class="container">
+      <div class="flash-notice">
+        <h4>
+        <% if flash[:notice]%>
+          <%= flash[:notice] %>
+        <% end %>
+        </h4>
+      </div>
       <%= yield %>
     </div>
   </body>
